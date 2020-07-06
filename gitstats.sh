@@ -24,8 +24,7 @@ repos=$(find "$homedir" -name .git)
 
 # initial values
 seen=() lines=0 commits=0
-for d in $repos
-do
+for d in $repos ; do
     cd ${d%/*}
     url=$(git remote -v | grep "push" | tr 'A-Z' 'a-z' | tr ':/\t@' ' ' | tr -s ' ')    # url for git remote
     url=$(sed 's/(push)//g; s/\.git//g; s/ git / /g; s/ https / /g' <<< "$url")         # cleaning
