@@ -1,6 +1,6 @@
 # gitstats
 
-Shell script for counting contributions on git repositories
+Shell script for counting contributions in git repositories
 
 ### Prerequisites
 
@@ -9,19 +9,21 @@ Shell script for counting contributions on git repositories
 
 ### Usage
 
-- Make sure to update all repos to the latest commits before running this script
+- Make sure to update all git repos to the latest commits before running this script
 
-- Modify line 12-17 of `gitstats.sh` using your favorite text editor, input relevant information
+- Modify [**line 12-17**](./blob/master/gitstats.sh#L12-L17) of `gitstats.sh` using your favorite text editor, fill in the following:
     - `NAME`: your name or email used for authoring git
     - `HOME`: top-most directory where your git repo is contained (please avoid using directories where you do not have execute access)
     - `SDATE`/`EDATE`: start and end date in _YYYY-MM-DD_
     - `STIME`/`ETIME`: start and end time in _HH:MM:SS_
 
-- Execute by running the following:
+- Execute the script:
 
 ```console
 $ ./gitstats.sh
 ```
+
+- Script automatically searches all git repos under given directory (`HOME`), counts contributions (number of commits and lines modified) made by the author (`NAME`) between specific period (from `SDATE STIME` to `EDATE ETIME`)
 
 #### Example
 
@@ -32,8 +34,8 @@ author="Gihyuk Ko"              # author's name or email address
 homedir="$HOME/Documents/"      # home directory
 sdate="2020-03-15"              # start date in YYYY-MM-DD
 edate="2020-06-15"              # end date in YYYY-MM-DD
-stime="00:00:00"                # start time
-etime="23:59:59"                # end time
+stime="00:00:00"                # start time in HH:MM:SS
+etime="23:59:59"                # end time in HH:MM:SS
 ```
 
 Output:
@@ -42,9 +44,10 @@ Output:
 name: Gihyuk Ko
 from: 2020-03-15 00:00:00
 to: 2020-06-15 23:59:59
-commits: 226
-lines: 1025826
+commits: 250
+lines: 1088070
 ```
 
 ### TODOs
 - error msgs
+- authorname / email distinction
