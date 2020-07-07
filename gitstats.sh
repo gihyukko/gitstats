@@ -11,8 +11,8 @@ fi
 
 author="NAME"                   # author's name or email address
 homedir="HOME"                  # home directory
-sdate="SDATE"                   # start date in YYYY-MM-DD
-edate="EDATE"                   # end date in YYYY-MM-DD
+sdate="SDATE"                   # start date in yyyy-mm-dd
+edate="EDATE"                   # end date in yyyy-mm-dd
 stime="STIME"                   # start time in HH:MM:SS
 etime="ETIME"                   # end time in HH:MM:SS
 

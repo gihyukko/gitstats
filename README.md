@@ -32,8 +32,8 @@ Example input
 ```sh
 author="Gihyuk Ko"              # author's name or email address
 homedir="$HOME/Documents/"      # home directory
-sdate="2020-03-15"              # start date in YYYY-MM-DD
-edate="2020-06-15"              # end date in YYYY-MM-DD
+sdate="2020-03-15"              # start date in yyyy-mm-dd
+edate="2020-06-15"              # end date in yyyy-mm-dd
 stime="00:00:00"                # start time in HH:MM:SS
 etime="23:59:59"                # end time in HH:MM:SS
 ```
