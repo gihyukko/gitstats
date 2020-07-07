@@ -23,7 +23,7 @@ Shell script for counting contributions in git repositories
 $ ./gitstats.sh
 ```
 
-- Script automatically searches all git repos under given directory (`HOME`), counts contributions (number of commits and lines modified) made by the author (`NAME`) between specific period (from `SDATE STIME` to `EDATE ETIME`)
+- The script automatically searches all git repos under given directory (`HOME`), counts contributions (number of commits and lines modified) made by the author (`NAME`) between specific period (from `SDATE STIME` to `EDATE ETIME`)
 
 #### Example
 
