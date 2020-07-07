@@ -14,7 +14,7 @@ Shell script for counting contributions in git repositories
 - Modify [**line 12-17**](gitstats.sh#L12-L17) of `gitstats.sh` using your favorite text editor, fill in the following:
     - `NAME`: your name or email used for authoring git
     - `HOME`: top-most directory where your git repo is contained (please avoid using directories where you do not have execute access)
-    - `SDATE`/`EDATE`: start and end date in yyyy-mm-dd_
+    - `SDATE`/`EDATE`: start and end date in _yyyy-mm-dd_
     - `STIME`/`ETIME`: start and end time in _HH:MM:SS_
 
 - Execute the script:
