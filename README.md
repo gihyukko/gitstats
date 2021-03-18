@@ -30,10 +30,10 @@ $ ./gitstats.sh
 Example input
 
 ```sh
-author="Gihyuk Ko"              # author's name or email address
-homedir="$HOME/Documents/"      # home directory
-sdate="2020-03-15"              # start date in yyyy-mm-dd
-edate="2020-06-15"              # end date in yyyy-mm-dd
+author="John Doe"               # author's name or email address
+homedir="$HOME/git-repos/"      # home directory
+sdate="2020-01-01"              # start date in yyyy-mm-dd
+edate="2020-12-31"              # end date in yyyy-mm-dd
 stime="00:00:00"                # start time in HH:MM:SS
 etime="23:59:59"                # end time in HH:MM:SS
 ```
@@ -41,13 +41,9 @@ etime="23:59:59"                # end time in HH:MM:SS
 Output:
 
 ```console
-name: Gihyuk Ko
-from: 2020-03-15 00:00:00
-to: 2020-06-15 23:59:59
-commits: 250
-lines: 1088070
+name: Jone Doe
+from: 2020-01-01 00:00:00
+to: 2020-12-31 23:59:59
+commits: 940
+lines: 12496910401
 ```
-
-### TODOs
-- error msgs
-- authorname / email distinction
