@@ -9,12 +9,12 @@ if [ "$(which git)" == "" ] ; then
     echo "git not installed!" && exit
 fi
 
-author="NAME"                   # author's name or email address
-homedir="HOME"                  # home directory
-sdate="SDATE"                   # start date in yyyy-mm-dd
-edate="EDATE"                   # end date in yyyy-mm-dd
-stime="STIME"                   # start time in HH:MM:SS
-etime="ETIME"                   # end time in HH:MM:SS
+author="Gihyuk Ko"              # author's name or email address
+homedir="$HOME/Documents/"      # home directory
+sdate="2020-11-18"              # start date in yyyy-mm-dd
+edate="2021-06-15"              # end date in yyyy-mm-dd
+stime="00:00:00"                # start time in HH:MM:SS
+etime="23:59:59"                # end time in HH:MM:SS
 
 # helper function for gitstat
 gitstats() { git log --shortstat --date "local" --author "$author" --since "${sdate} ${stime}" --until "${edate} ${etime}"; }
