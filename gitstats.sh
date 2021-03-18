@@ -11,8 +11,8 @@ fi
 
 author="Gihyuk Ko"              # author's name or email address
 homedir="$HOME/Documents/"      # home directory
-sdate="2020-11-18"              # start date in yyyy-mm-dd
-edate="2021-06-15"              # end date in yyyy-mm-dd
+sdate="2020-11-24"              # start date in yyyy-mm-dd
+edate="2021-06-10"              # end date in yyyy-mm-dd
 stime="00:00:00"                # start time in HH:MM:SS
 etime="23:59:59"                # end time in HH:MM:SS
 
