@@ -20,7 +20,7 @@ etime="23:59:59"                # end time in HH:MM:SS
 gitstats() { git log --shortstat --date "local" --author "$author" --since "${sdate} ${stime}" --until "${edate} ${etime}"; }
 
 # git repos under homedir
-repos=$(find "$homedir" -name .git)
+repos=$(find "$homedir" -name .git -type d)
 
 # initial values
 seen=() lines=0 commits=0
